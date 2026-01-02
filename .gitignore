@@ -1,0 +1,6 @@
+# User-specific configuration (created by setup)
+config.sh
+config.json
+
+# Keep templates
+!config.example.sh
