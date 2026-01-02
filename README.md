@@ -2,22 +2,20 @@
 
 **Universal Stellaris Mod Log Analyzer**
 
-A cross-platform tool for Stellaris mod developers to quickly check logs for errors, filter by mod prefix, and validate log freshness.
+Watch your mod's logs **in real-time while you play**. Catch errors instantly, filter out vanilla noise, and debug faster.
 
 ![stelmod-debug Screenshot](screenshot.png)
 
 ## Features
 
-- **Live Monitor** - Real-time log watching in separate windows
-- **Smart Filtering** - Only shows errors from YOUR mod (not vanilla)
+- **Live Monitor While You Play** - Real-time log streaming in separate windows
+- **Instant Error Alerts** - Beep notification when YOUR mod has errors
+- **Smart Filtering** - Only shows errors from YOUR mod (vanilla filtered out)
+- **Game Launch Integration** - Launches Stellaris via Steam if not running
+- **Auto-Detection** - Finds your Stellaris folder and mods automatically
 - **Cross-Platform** - Works on Windows, Linux, and macOS
-- **GUI Setup** - Folder picker for easy configuration
-- **Auto-Detection** - Finds Stellaris folder and mods automatically
-- **Game Launch** - Detects if Stellaris is running, offers to launch via Steam
-- **Error Scanning** - Find script errors for your mod
-- **Game Log Filtering** - Filter by your mod's prefix (e.g., `[MYMOD]`)
-- **Timestamp Validation** - Check if logs are fresh after mod sync
-- **Color-Coded Output** - Errors, warnings, success highlighted
+- **GUI Setup** - Easy folder picker, no manual config needed
+- **Color-Coded Output** - Errors red, warnings yellow, success green
 
 ---
 
@@ -50,18 +48,21 @@ chmod +x stelmod-debug.sh
 
 ## Live Monitor (Windows)
 
-The star feature! Opens 2 real-time monitoring windows:
+**Debug while you play!** No more alt-tabbing to check logs manually.
+
+Opens 2 real-time monitoring windows that update **as you play the game**:
 
 | Window | Purpose |
 |--------|---------|
-| **LOG WATCHER** | Combined game.log + error.log stream |
-| **FOCUS ALERTS** | Critical errors only, with beep notification |
+| **LOG WATCHER** | See your `[MYMOD]` log messages live as events fire |
+| **FOCUS ALERTS** | Get a **BEEP** when your mod throws an error |
 
 ### How it works:
 1. Run `stelmod-debug.bat` → Select `[2] Monitor`
 2. If Stellaris isn't running, it offers to launch via Steam
-3. Two windows open showing real-time log output
-4. Only errors from YOUR mod folder are shown (vanilla errors filtered out)
+3. Two windows open - position them on a second monitor or to the side
+4. **Play the game** - watch logs update in real-time!
+5. Hear a beep? Check the FOCUS ALERTS window for the error
 
 ### Smart Error Filtering
 
