@@ -4,7 +4,14 @@
 
 Watch your mod's logs **in real-time while you play**. Catch errors instantly, filter out vanilla noise, and debug faster.
 
-![stelmod-debug Screenshot](screenshot.png)
+### Main Menu
+![Main Menu](screenshot-menu.png)
+
+### Live Log Watcher
+![Log Watcher](screenshot-logwatcher.png)
+
+### Focus Alerts
+![Focus Alerts](screenshot-alerts.png)
 
 ## Features
 
