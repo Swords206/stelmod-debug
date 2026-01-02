@@ -55,8 +55,19 @@ $PopularPaths = @(
     "$env:USERPROFILE\OneDrive\Documents\Paradox Interactive\Stellaris"
     # Alternative OneDrive paths
     "$env:OneDrive\Documents\Paradox Interactive\Stellaris"
-    # D: drive common location
+    # Common secondary drives (D: through H:)
     "D:\Documents\Paradox Interactive\Stellaris"
+    "E:\Documents\Paradox Interactive\Stellaris"
+    "F:\Documents\Paradox Interactive\Stellaris"
+    "G:\Documents\Paradox Interactive\Stellaris"
+    "H:\Documents\Paradox Interactive\Stellaris"
+    # Games folder variations
+    "D:\Games\Paradox Interactive\Stellaris"
+    "E:\Games\Paradox Interactive\Stellaris"
+    "F:\Games\Paradox Interactive\Stellaris"
+    # SteamLibrary locations (user data still goes to Documents usually)
+    "D:\SteamLibrary\steamapps\common\Stellaris"
+    "E:\SteamLibrary\steamapps\common\Stellaris"
 )
 
 # ---------------------------------------------------------------------------

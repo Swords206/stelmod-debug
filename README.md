@@ -121,7 +121,9 @@ The tool automatically searches these common locations:
 ### Windows
 - `Documents\Paradox Interactive\Stellaris`
 - `OneDrive\Documents\Paradox Interactive\Stellaris`
-- `D:\Documents\Paradox Interactive\Stellaris`
+- `D:` through `H:` drives (`Documents\Paradox Interactive\Stellaris`)
+- `D:`, `E:`, `F:` drives (`Games\Paradox Interactive\Stellaris`)
+- SteamLibrary paths on secondary drives
 
 ### Linux
 - `~/.local/share/Paradox Interactive/Stellaris` (Steam)
