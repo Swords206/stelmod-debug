@@ -171,6 +171,38 @@ The tool color-codes output for quick scanning:
 
 ---
 
+## Why Use a Log Prefix?
+
+Stellaris `game.log` contains **thousands of messages** from:
+- Your mod
+- Other mods
+- Base game & DLCs
+
+Without a prefix, finding your mod's messages is like finding a needle in a haystack:
+
+```
+[14:32:01] Starting galaxy generation...
+[14:32:02] Fleet moved to system
+[14:32:02] Your mod did something      ← WHERE IS THIS?!
+[14:32:02] AI evaluated diplomacy...
+... 10,000 more lines ...
+```
+
+**With a prefix `[MYMOD]`**, the tool filters to show ONLY your messages:
+
+```
+[MYMOD] Spawned 5 ships
+[MYMOD] Route complete
+[MYMOD] ERROR: Fleet has no owner!
+```
+
+| Log File | Filtered By | Purpose |
+|----------|-------------|---------|
+| `game.log` | Your prefix `[MYMOD]` | Find your log messages |
+| `error.log` | Your mod folder name | Find your script errors |
+
+---
+
 ## Tips for Mod Developers
 
 ### 1. Use Consistent Log Prefixes
