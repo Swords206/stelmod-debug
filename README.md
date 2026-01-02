@@ -4,11 +4,16 @@
 
 A cross-platform tool for Stellaris mod developers to quickly check logs for errors, filter by mod prefix, and validate log freshness.
 
+![stelmod-debug Screenshot](screenshot.png)
+
 ## Features
 
+- **Live Monitor** - Real-time log watching in separate windows
+- **Smart Filtering** - Only shows errors from YOUR mod (not vanilla)
 - **Cross-Platform** - Works on Windows, Linux, and macOS
 - **GUI Setup** - Folder picker for easy configuration
-- **Auto-Detection** - Finds Stellaris folder in common locations
+- **Auto-Detection** - Finds Stellaris folder and mods automatically
+- **Game Launch** - Detects if Stellaris is running, offers to launch via Steam
 - **Error Scanning** - Find script errors for your mod
 - **Game Log Filtering** - Filter by your mod's prefix (e.g., `[MYMOD]`)
 - **Timestamp Validation** - Check if logs are fresh after mod sync
@@ -43,11 +48,36 @@ chmod +x stelmod-debug.sh
 
 ---
 
+## Live Monitor (Windows)
+
+The star feature! Opens 2 real-time monitoring windows:
+
+| Window | Purpose |
+|--------|---------|
+| **LOG WATCHER** | Combined game.log + error.log stream |
+| **FOCUS ALERTS** | Critical errors only, with beep notification |
+
+### How it works:
+1. Run `stelmod-debug.bat` → Select `[2] Monitor`
+2. If Stellaris isn't running, it offers to launch via Steam
+3. Two windows open showing real-time log output
+4. Only errors from YOUR mod folder are shown (vanilla errors filtered out)
+
+### Smart Error Filtering
+
+The tool only shows errors containing your mod folder name:
+- ✅ `the_living_network/events/ln_spawn.txt` → Shown
+- ❌ `events/nomad_events.txt` → Filtered out
+- ❌ `mod/ugc_12345.mod` → Filtered out (Workshop mods)
+
+---
+
 ## Commands
 
 | Command | Description |
 |---------|-------------|
 | `setup` | Interactive configuration with folder picker |
+| `monitor` | **Live monitor** - Real-time log watching (Windows) |
 | `errors` | Show error.log entries for your mod |
 | `game` | Show game.log entries matching your prefix |
 | `all` | Show freshness + errors + game logs |
